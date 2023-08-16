@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#C9D6F1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Fahrenheit To Celsius"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=" Converter"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#00CDAC"
+        android:layout_marginLeft="30dp"
+
+        android:text="Enter Temperature "
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        >
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_background"
+            />
+       <TextView
+           android:id="@+id/dgree"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="℃"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:layout_marginLeft="20dp"
+           />
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+
+        android:layout_margin="40dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert "
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#111526"/>
+</LinearLayout>
